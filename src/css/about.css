@@ -1,0 +1,15 @@
+.faq p{
+    text-align: center;
+    max-width: 100%;
+    text-wrap: wrap;
+    font-size: 18px;
+}
+.faq ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 2rem;
+    gap: 10px;
+}

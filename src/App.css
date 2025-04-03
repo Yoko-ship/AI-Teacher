@@ -1,0 +1,23 @@
+header{
+    background-color: #CFD8FF;
+    padding: 20px;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header a.active{
+    color:rgb(204, 0, 255)
+
+}
+header li{
+    cursor: pointer;
+    font-size: 19px;
+}
+
