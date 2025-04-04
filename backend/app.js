@@ -3,11 +3,17 @@ import { GoogleGenAI } from "@google/genai"
 import "dotenv/config"
 import { configDotenv } from "dotenv"
 configDotenv({path:'../.env'})
+import cors from "cors"
 const promptInstructions = `
 Представь, что ты профессиональный эксперт.Ты знаешь абсолютно всё умеешь объяснять даже самым начинающим. Объясни мне просто, как будто мне 5 лет, используя доступные слова,молодежные сленги,возможно мемы, примеры и аналогии. Добавь в конец вопросы по теме,и Проверь себя ! Тема: 
 `
 const app = express()
 app.use(express.json())
+
+app.use(cors({
+  origin: 'https://ai-teacher-nnkqgmgre-yoko-ships-projects.vercel.app',  // Укажите URL фронтенда
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Разрешенные методы
+}));
 const apiKey = process.env.APIKEY
 const ai = new GoogleGenAI({apiKey:apiKey})
 
@@ -24,6 +30,10 @@ app.use((req, res, next) => {
     next();
   });
   
+
+  app.get('/TEST', (req, res) => {
+    res.json({ message: 'Hello from AI endpoint' });
+  });
 
 app.post("/AI",async(req,res) =>{
     const value = req.body
