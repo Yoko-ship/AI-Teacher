@@ -14,7 +14,7 @@ function Faq() {
       </p>
       <ul>
         <li>
-          <h3>Почему AI Tutor – Это Must-Have?</h3>
+          <h3>Почему AI Tutor – Это Must-Have?!</h3>
         </li>
         <li>
           <strong>Раскладывает по полочкам</strong> – хоть нейросети, хоть квантовую механику,
