@@ -44,3 +44,29 @@
     text-transform: uppercase;
     font-size: 20px;
 }
+
+@media(max-width:649px) {
+    .grids{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 5px;
+        padding-top: 5px;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center; 
+    }
+    
+}
+
+
+@media(min-width:650px) and (max-width:900px){
+    .grids{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
