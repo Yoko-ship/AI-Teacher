@@ -1,5 +1,5 @@
 export async function FetchingData(value){
-    const response = await fetch("http://localhost:3000/AI",{
+    const response = await fetch("https://ai-teacher-d83unt96x-yoko-ships-projects.vercel.app/AI",{
         method:"POST",
         body: JSON.stringify(value),
         headers:{
