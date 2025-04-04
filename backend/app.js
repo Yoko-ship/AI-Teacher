@@ -43,6 +43,3 @@ app.post("/AI",async(req,res) =>{
 
 })
 
-app.listen(3000,() =>{
-    console.log("Сервер работает на порте 3000")
-})
