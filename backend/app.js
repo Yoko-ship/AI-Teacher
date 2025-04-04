@@ -43,3 +43,4 @@ app.post("/AI",async(req,res) =>{
 
 })
 
+export default app
